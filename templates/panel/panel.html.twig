@@ -1,0 +1,9 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Panel użytkownika: {{ app.user.username }}</h1>
+    <a href="{{ path('password_add') }}" >Dodaj nowe haslo</a><br/>
+    <a href="{{ path('password_index') }}" >Zobacz swoje hasla</a><br/>
+    <a href="{{ path('auth_edit') }}" >Zmien swoje haslo</a><br/>
+    <a href="{{ path('app_logout') }}" >Logout</a>
+{% endblock  %}
